@@ -69,7 +69,7 @@ void monty_div(stack_t **stack, unsigned int line_number)
 		set_op_tok_error(div_error(line_number));
 		return;
 	}
-	
+
 	(*stack)->next->next->n /= (*stack)->next->n;
 	monty_pop(stack, line_number);
 }
@@ -90,7 +90,7 @@ void monty_mul(stack_t **stack, unsigned int line_number)
 		set_op_tok_error(short_stack_error(line_number, "mul"));
 		return;
 	}
-	
+
 	(*stack)->next->next->n *= (*stack)->next->n;
 	monty_pop(stack, line_number);
 }

@@ -58,7 +58,7 @@ int is_empty_line(char *line, char *delims)
 				break;
 		}
 		if (delims[j] == '\0')
-			
+
 			return (0);
 	}
 
@@ -81,7 +81,7 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int)
 		{"pint", monty_pint},
 		{"pop", monty_pop},
 		{"swap", monty_swap},
-		{"add", monty_add}
+		{"add", monty_add},
 		{"nop", monty_nop},
 		{"sub", monty_sub},
 		{"div", monty_div},
@@ -93,7 +93,7 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int)
 		{"rotr", monty_rotr},
 		{"stack", monty_stack},
 		{"queue", monty_queue},
-		{NULL, NULL}
+		{NULL, NULL},
 	};
 	int i;
 
